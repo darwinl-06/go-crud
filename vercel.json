@@ -1,7 +1,7 @@
 {
     "version": 2,
     "build": {
-      "command": "go build -o main .",
+      "command": "go build -o ./src/github.com/darwinl-06/go_crud/main ./src/github.com/darwinl-06/go_crud/main.go",
       "output": "main"
     },
     "routes": [
@@ -10,4 +10,4 @@
         "dest": "main"
       }
     ]
-  }
+}
