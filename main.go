@@ -14,12 +14,10 @@ func init() {
 
 func main() {
 	r := gin.Default()
+	
 	config := cors.DefaultConfig()
     config.AllowAllOrigins = true
 	config.AllowMethods = []string{"POST", "GET", "PUT", "DELETE"}
-    config.AllowHeaders = []string{"Origin", "Content-Type", "Authorization", "Accept", "User-Agent", "Cache-Control", "Pragma"}
-    config.ExposeHeaders = []string{"Content-Length"}
-    config.AllowCredentials = true
 	
     r.Use(cors.New(config))
 

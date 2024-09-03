@@ -100,8 +100,6 @@ func GamesGetById(c *gin.Context) {
 	// Get the game
 	var game models.Game
 
-	// al manipular con la DB usando la variable
-	// esta se modifica con el resultado de la operación
 	initializers.DB.First(&game, id)
 
 	// Return
